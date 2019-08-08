@@ -10,6 +10,9 @@ class Card(ABC):
         self.number = number
         self.shade = shade
 
+    def __str__(self):
+        return "[Card: {} : {} : {}]".format(self.color, self.number, self.shade)
+
 
 class OvalCard(Card):
     def __init__(self, color, number, shade):
